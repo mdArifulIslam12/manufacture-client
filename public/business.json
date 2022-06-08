@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Countries",
+        "img":"https://i.ibb.co/R9p8kBg/trust-removebg-preview.png",
+        "value":100
+    },
+    {
+        "name":"Complete Project",
+        "img":"https://i.ibb.co/MpSqvLJ/trust-1-removebg-preview.png",
+        "value":735
+    },
+    {
+        "name":"Happy Clients",
+        "img":"https://i.ibb.co/ScKt3Y3/trust-1-removebg-preview.png",
+        "value":535
+    },
+    {
+        "name":"Feedbacks",
+        "img":"https://i.ibb.co/dp4dsFD/trust-3-removebg-preview.png",
+        "value":650
+    }
+]

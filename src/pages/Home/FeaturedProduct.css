@@ -1,0 +1,29 @@
+.collection_item {
+    box-shadow: 5px 8px 12px #8d959e1c;
+    padding: 16px;
+    background: white;
+}
+.collection_img {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.collection_img:before {
+    content: "";
+    background: linear-gradient(0deg,#296dc1 0%,rgba(31,31,31,0) 100%);
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: .6;
+    z-index: 1;
+    transition: .2s;
+}
+
+.collection_title {
+    color: black;
+    text-transform: uppercase;
+}
