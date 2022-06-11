@@ -24,7 +24,8 @@ import RequireAdmin from "./pages/Login/RequireAdmin";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-4 lg:mx-0">
+    <div className="max-w-7xl mx-auto">
+      <div className="mx-4 lg:mx-0">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -65,6 +66,7 @@ function App() {
       </Routes>
       <Footer />
       <Toaster position="top-right" reverseOrder={false}></Toaster>
+      </div>
     </div>
   );
 }
