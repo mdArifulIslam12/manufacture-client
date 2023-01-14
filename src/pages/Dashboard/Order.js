@@ -5,7 +5,7 @@ const Order = ({ order }) => {
   const { productName, totalQuantity, totalPrice, _id } = order;
   const [items,setItems] = useState([])
   useEffect(()=>{
-    fetch('https://still-fjord-45302.herokuapp.com/order')
+    fetch('https://manufacturer-server.onrender.com/order')
     .then(res=>res.json())
     .then(data=>setItems(data))
 },[])
@@ -13,7 +13,7 @@ const Order = ({ order }) => {
     const proceed = window.confirm("Are your sure!!");
 
     if (proceed) {
-      const url = `https://still-fjord-45302.herokuapp.com/orders/${id}`;
+      const url = `https://manufacturer-server.onrender.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

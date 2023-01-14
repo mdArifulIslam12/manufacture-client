@@ -11,7 +11,7 @@ const CheckoutForm = ({ product }) => {
   const [transactionId, setTransactionId] = useState("");
   const { totalPrice, name, email, _id } = product;
   useEffect(() => {
-    fetch("https://still-fjord-45302.herokuapp.com/create-payment-intent", {
+    fetch("https://manufacturer-server.onrender.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -70,7 +70,7 @@ const CheckoutForm = ({ product }) => {
       };
 
       setSuccess("You Payment completed");
-      fetch(`https://still-fjord-45302.herokuapp.com/orders/${_id}`, {
+      fetch(`https://manufacturer-server.onrender.com/orders/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

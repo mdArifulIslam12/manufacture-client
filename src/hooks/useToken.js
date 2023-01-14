@@ -8,7 +8,7 @@ const useToken = user =>{
             email: email
         };
         if(email){
-            fetch(`https://still-fjord-45302.herokuapp.com/user/${email}`, {
+            fetch(`https://manufacturer-server.onrender.com/user/${email}`, {
                 method:'PUT',
                 headers: {
                     'content-type': 'application/json'

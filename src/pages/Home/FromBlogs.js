@@ -4,7 +4,7 @@ import FromBlog from './FromBlog';
 const FromBlogs = () => {
     const [blogs,setBlogs] = useState([])
     useEffect(()=>{
-        fetch('https://still-fjord-45302.herokuapp.com/blogs')
+        fetch('https://manufacturer-server.onrender.com/blogs')
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])

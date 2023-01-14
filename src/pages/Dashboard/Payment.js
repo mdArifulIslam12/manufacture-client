@@ -13,7 +13,7 @@ const Payment = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    fetch(`https://still-fjord-45302.herokuapp.com/orders/${id}`)
+    fetch(`https://manufacturer-server.onrender.com/orders/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

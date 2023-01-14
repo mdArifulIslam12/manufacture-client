@@ -11,7 +11,7 @@ const MyProfile = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = (data,event) => {
         const email = user.email
-        fetch(`https://still-fjord-45302.herokuapp.com/update/${email}`, {
+        fetch(`https://manufacturer-server.onrender.com/update/${email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

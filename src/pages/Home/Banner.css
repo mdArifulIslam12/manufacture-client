@@ -1,0 +1,12 @@
+.slick-dots li button:before {
+    font-size: 11px;
+}
+.slick-dots li.slick-active button:before {
+    color: #0b62cb;
+}
+.background-color{
+    background-color: #2471cf52;
+}
+.hero-detalis-item{
+    color: #de2121f5;
+}

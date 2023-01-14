@@ -3,7 +3,10 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="px-6">
-      <h2 className="text-xl">
+      <div className="grid lg:grid-cols-2 gap-5 sm:grid-cols-1">
+        <div className="card max-w-lg bg-base-100 shadow-xl">
+          <div className="card-body">
+          <h2 className="text-xl">
         Question-1: How will you improve the performance of a React Application?
       </h2>
       <p>
@@ -27,7 +30,11 @@ const Blogs = () => {
         data flow. Data immutability, which comes from the functional
         programming world, can be applied to the design of front-end.
       </p>
-      <h2 className="text-xl">
+          </div>
+        </div>
+        <div className="card max-w-lg bg-base-100 shadow-xl">
+          <div className="card-body">
+          <h2 className="text-xl">
         Question-2: What are the different ways to manage a state in a React
         application?
       </h2>
@@ -48,7 +55,13 @@ const Blogs = () => {
         my user visits the home page if the data hasn't changed? Do I need to
         add useState and useEffect in every component I want to fetch my data?
       </p>
-      <h2 className="text-xl">Question-3: How does prototypical inheritance work?</h2>
+          </div>
+        </div>
+        <div className="card max-w-lg bg-base-100 shadow-xl">
+          <div className="card-body">
+          <h2 className="text-xl">
+        Question-3: How does prototypical inheritance work?
+      </h2>
       <p>
         Ans: If you've worked with other object-oriented programming languages
         such as Java or C++, you've been familiar with the inheritance concept.
@@ -66,7 +79,11 @@ const Blogs = () => {
         object can inherit properties of another object. The object from where
         the properties are inherited is named prototype.
       </p>
-      <h2 className="text-xl">
+          </div>
+        </div>
+        <div className="card max-w-lg bg-base-100 shadow-xl">
+          <div className="card-body">
+          <h2 className="text-xl">
         Question-4: You have an array of products. Each product has a name,
         price, description, etc. How will you implement a search to find
         products by name?
@@ -91,7 +108,13 @@ const Blogs = () => {
         the element gets pushed to the output array. If the condition returns
         false, the element does not get pushed to the output array.
       </p>
-      <h2 className="text-xl">Question-5: What is a unit test? Why should write unit tests?</h2>
+          </div>
+        </div>
+        <div className="card max-w-lg bg-base-100 shadow-xl">
+          <div className="card-body">
+          <h2 className="text-xl">
+        Question-5: What is a unit test? Why should write unit tests?
+      </h2>
       <p>
         Ans: Unit testing is performed during the coding stage of a software
         development project to test individual units of the application. It's
@@ -113,20 +136,28 @@ const Blogs = () => {
         find SUnit, the mother of all unit testing frameworks created by Kent
         Beck, and a reference in chapter 5 of The Art of Software Testing .
         Before that, it's mostly a mystery. I asked Jerry Weinberg about his
-        experiences with unit testing We did unit testing in 1956. As far as
-        I knew, it was always done, as long as there were computers. Regardless
-        of when and where unit testing began, one thing is for sure. Unit
-        testing is here to stay. Let's look at some more practical aspects of
-        unit testing.Writing software unit test code provides quick, almost
+        experiences with unit testing We did unit testing in 1956. As far as I
+        knew, it was always done, as long as there were computers. Regardless of
+        when and where unit testing began, one thing is for sure. Unit testing
+        is here to stay. Let's look at some more practical aspects of unit
+        testing.Writing software unit test code provides quick, almost
         instantaneous feedback about the correctness of the coding, including
         its design and implementation. Test passes and test fails confirm if the
         software works or doesn't work as intended and can update its vetting
         every time someone changes a specific piece of code.Unit testing allows
         the programmer to refactor code at a later date, and make sure the
-        module still works correctly. The procedure is
-        to write test cases for all functions and methods so that whenever a
-        change causes a fault, it can be quickly identified and fixed.
+        module still works correctly. The procedure is to write test cases for
+        all functions and methods so that whenever a change causes a fault, it
+        can be quickly identified and fixed.
       </p>
+          </div>
+        </div>
+      </div>
+    
+
+      
+    
+    
     </div>
   );
 };

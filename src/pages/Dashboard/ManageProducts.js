@@ -4,7 +4,7 @@ import Part from '../Home/Part';
 const ManageProducts = () => {
     const [parts,setParts] = useState([])
     useEffect(()=>{
-        fetch('https://still-fjord-45302.herokuapp.com/parts')
+        fetch('https://manufacturer-server.onrender.com/parts')
         .then(res=>res.json())
         .then(data=>setParts(data))
     },[])

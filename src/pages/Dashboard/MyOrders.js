@@ -9,7 +9,7 @@ const MyOrders = () => {
    
     useEffect(()=>{
         const email = user.email
-        fetch(`https://still-fjord-45302.herokuapp.com/orders?email=${email}`)
+        fetch(`https://manufacturer-server.onrender.com/orders?email=${email}`)
         .then(res=>res.json())
         .then(data=>setOrders(data))
     },[orders])

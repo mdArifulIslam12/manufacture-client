@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import logoImg from '../../images/logo.png'
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
@@ -66,9 +67,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">
-          Manufacture Computer
-        </a>
+        <img src={logoImg} className='w-14' alt="" />
       </div>
       <div className="navbar-center hidden lg:flex ml-auto">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>

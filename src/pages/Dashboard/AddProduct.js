@@ -10,7 +10,7 @@ const AddProduct = () => {
   } = useForm();
   const onSubmit = (data, event) => {
     console.log(data);
-    const url = "https://still-fjord-45302.herokuapp.com/parts";
+    const url = "https://manufacturer-server.onrender.com/parts";
     fetch(url, {
       method: "POST",
       headers: {

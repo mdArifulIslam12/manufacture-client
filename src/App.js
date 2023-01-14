@@ -24,8 +24,9 @@ import RequireAdmin from "./pages/Login/RequireAdmin";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="mx-4 lg:mx-0">
+    <div >
+     <div className="max-w-7xl mx-auto">
+     <div className="mx-4 lg:mx-0">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -64,9 +65,11 @@ function App() {
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-      <Footer />
+      
       <Toaster position="top-right" reverseOrder={false}></Toaster>
       </div>
+     </div>
+     <Footer />
     </div>
   );
 }

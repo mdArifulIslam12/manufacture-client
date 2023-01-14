@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 const AddReview = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = (data,event) => {
-        const url = "https://still-fjord-45302.herokuapp.com/review";
+        const url = "https://manufacturer-server.onrender.com/review";
         fetch(url, {
           method: "POST",
           headers: {

@@ -2,8 +2,8 @@ import React from 'react';
 
 const MyPortfolio = () => {
     return (
-        <div className='mx-20'>
-            <h2 className='text-xl'>Name: Arif</h2>
+        <div className='mx-20 mb-10'>
+            <h2 className='text-2xl font-bold'>Md Arif</h2>
             <p>Educational: I am a student and H.S.C examine 2022.</p>
             <p className='block'>Skill: <span className='block'>
                     <span className='block'>1. HTML</span>

@@ -19,7 +19,7 @@ const Part = ({ part }) => {
         <p className=" font-medium">Available quantity: {available}</p>
         <p>{detail}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary" onClick={()=>handleNavigate(_id)}>Purchase</button>
+          <button className="btn btn-primary" onClick={()=>handleNavigate(_id)}>Add to Cart</button>
         </div>
       </div>
     </div>

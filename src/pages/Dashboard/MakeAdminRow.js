@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 const MakeAdminRow = ({ user, refetch, index}) => {
   const { email, role } = user;
   const makeAdmin = () => {
-    fetch(`https://still-fjord-45302.herokuapp.com/user/admin/${email}`, {
+    fetch(`https://manufacturer-server.onrender.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

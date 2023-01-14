@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import toast from 'react-hot-toast';
 
 const Purchase = () => {
+  const navigate = useNavigate()
     const { id } = useParams();
     const [user] = useAuthState(auth)
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [singleItem,setSingleItem] = useState({})
     const [totalQuantitys,setTotalQuantitys] = useState(0)
     useEffect(() => {
-        fetch(`https://still-fjord-45302.herokuapp.com/parts/${id}`)
+        fetch(`https://manufacturer-server.onrender.com/parts/${id}`)
           .then((res) => res.json())
           .then((data) => {
               setSingleItem(data)
@@ -47,7 +49,7 @@ const Purchase = () => {
             name:data.name,
             phone:data.number
         }
-        const url = "https://still-fjord-45302.herokuapp.com/order";
+        const url = "https://manufacturer-server.onrender.com/order";
         fetch(url, {
           method: "POST",
           headers: {
@@ -58,15 +60,19 @@ const Purchase = () => {
           .then((res) => res.json())
           .then((data) => {
             toast.success("Add Your Order Product");
+            navigate('/dashboard/myOrders')
           });
     }
 
     return (
         <div className='flex h-screen mt-16 mb-16 justify-center items-center'>
-        <div className="card w-96 bg-base-100 shadow-xl">
+       <div className='mr-10'>
+          <img src={singleItem.img} alt="" />
+       </div>
+       <div className="card w-96 bg-base-100 shadow-xl">
             <div className="card-body">
-            <h2 className='font-medium'>{singleItem.name}</h2>
-                    <p className='font-medium'>Total Price: {singleItem.price * totalQuantitys}</p>
+            <h2 className='font-medium text-2xl'>{singleItem.name}</h2>
+                    <p className='font-medium text-xl'>Total Price: ${singleItem.price * totalQuantitys}</p>
                     <div className='flex'>
                     <button className='btn btn-sm' onClick={handleDecrease}>Decrease</button>
                     <p className='text-center text-xl font-medium'>{totalQuantitys}</p>

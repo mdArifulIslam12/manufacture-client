@@ -4,7 +4,7 @@ import FeaturedProduct from './FeaturedProduct';
 const FeaturedProducts = () => {
     const [features,setFeatures] = useState([])
     useEffect(()=>{
-        fetch('https://still-fjord-45302.herokuapp.com/feature')
+        fetch('https://manufacturer-server.onrender.com/feature')
         .then(res=>res.json())
         .then(data => setFeatures(data))
     },[])

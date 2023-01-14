@@ -5,7 +5,7 @@ import BusinessDetail from "./BusinessDetail";
 const Business = () => {
     const [businesses ,setBusinesses]=useState([])
     useEffect(()=>{
-        fetch('https://still-fjord-45302.herokuapp.com/business')
+        fetch('https://manufacturer-server.onrender.com/business')
         .then(res=>res.json())
         .then(data=> setBusinesses(data))
     },[])

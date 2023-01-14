@@ -4,7 +4,7 @@ import Loading from '../Shered/Loading';
 import MakeAdminRow from './MakeAdminRow';
 
 const MakeAdmin = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://still-fjord-45302.herokuapp.com/user').then(res => res.json()));
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://manufacturer-server.onrender.com/user').then(res => res.json()));
     if (isLoading) {
         return <Loading></Loading>
     }
