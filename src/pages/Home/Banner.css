@@ -5,8 +5,9 @@
     color: #0b62cb;
 }
 .background-color{
-    background-color: #2471cf52;
+    /* background-color: #2471cf52; */
+    background-color: rgba(0, 0, 0, 0.035);
 }
 .hero-detalis-item{
-    color: #de2121f5;
+    color: #21de50f5;
 }

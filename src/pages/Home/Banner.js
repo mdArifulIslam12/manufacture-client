@@ -29,7 +29,7 @@ const Banner = () => {
           <div className="hero-overlay rounded-lg background-color"></div>
           <div className="hero-content text-neutral-content flex justify-start">
             <div className="">
-              <h1 className="mb-5 text-4xl font-bold text-primary uppercase">
+              <h1 className="mb-5 text-4xl font-bold  text-secondary uppercase">
                 Gaming psc <br /> have the processing power{" "}
               </h1>
               <p className="mb-5 lg:mr-96 max-w-3xl hero-detalis-item font-medium">
@@ -55,7 +55,7 @@ const Banner = () => {
           <div className="hero-overlay rounded-lg background-color"></div>
           <div className="hero-content text-neutral-content flex justify-start">
             <div className="">
-              <h1 className="mb-5 text-4xl font-bold text-primary uppercase">
+              <h1 className="mb-5 text-4xl font-bold text-secondary uppercase">
                 Gaming psc <br /> have the processing power{" "}
               </h1>
               <p className="mb-5 lg:mr-96 max-w-3xl hero-detalis-item font-medium">

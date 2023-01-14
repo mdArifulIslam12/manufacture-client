@@ -23,11 +23,11 @@ const Login = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    useEffect( () =>{
-        if (token) {
+    
+        if (user || user1) {
             navigate(from, { replace: true });
         }
-    }, [token, from, navigate])
+    
 
     if (loading || loading1) {
         return <Loading></Loading>
